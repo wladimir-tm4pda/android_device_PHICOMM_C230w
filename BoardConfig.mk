@@ -54,12 +54,7 @@ USE_CAMERA_STUB := true
 #LOCAL_PATH := $(call my-dir)
 LOCAL_PATH := device/PHICOMM/C230w
 
-$(shell echo $$LOCAL_PATH)
-
 ######
-#TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
-TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
-#TARGET_SPECIFIC_HEADER_PATH += device/zte/kis3/include
 
 # Platform
 #BOARD_VENDOR := PHICOMM
@@ -80,6 +75,10 @@ TARGET_NO_RPC := true
 #CAF:
 TARGET_GLOBAL_CFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
+
+#TARGET_SPECIFIC_HEADER_PATH += $(LOCAL_PATH)/include
+TARGET_SPECIFIC_HEADER_PATH := $(LOCAL_PATH)/include
+#TARGET_SPECIFIC_HEADER_PATH += device/zte/kis3/include
 
 # CPU
 TARGET_ARCH := arm
@@ -319,19 +318,12 @@ TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
 
 RECOVERY_NAME := CWM for PHICOMM C230w
 
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/etc/recovery.fstab
+#TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery.fstab
 #TARGET_PROVIDES_RECOVERY_INIT_RC := true
 #TARGET_RECOVERY_INITRC := $(LOCAL_PATH)/recovery/init.rc
 #Assert
 #TARGET_OTA_ASSERT_DEVICE := C230w
 #TARGET_OTA_ASSERT_DEVICE := f310lr,f310l,f310s,f310k
-
-#files from cm-11.0:
-#BOARD_CUSTOM_GRAPHICS += $(LOCAL_PATH)/miniui/recovery/graphics.c $(LOCAL_PATH)/miniui/recovery/graphics_overlay.c
-#BOARD_CUSTOM_GRAPHICS := $(LOCAL_PATH)/miniui/recovery/graphics.c $(LOCAL_PATH)/miniui/recovery/graphics_overlay.c
-#BOARD_CUSTOM_GRAPHICS += $(LOCAL_PATH)/miniui/recovery/graphics_overlay.c
-BOARD_CUSTOM_GRAPHICS := ../../../device/PHICOMM/C230w/recovery/graphics.c ../../../device/PHICOMM/C230w/recovery/graphics_overlay.c
-#BOARD_CUSTOM_GRAPHICS := ../../../$(LOCAL_PATH)/recovery/graphics_overlay.c
 
 #Philz edits
 #TARGET_SCREEN_HEIGHT := 800
