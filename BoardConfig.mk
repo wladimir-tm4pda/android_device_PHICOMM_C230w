@@ -347,7 +347,7 @@ TW_TARGET_USES_QCOM_BSP := true
 #TARGET_RECOVERY_FSTAB := device/PHICOMM/msm8610/ramdisk/fstab.qcom
 #RECOVERY_FSTAB_VERSION := 2
 
-RECOVERY_NAME := TWRP for PHICOMM C230w
+#RECOVERY_NAME := TWRP for PHICOMM C230w
 
 #TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/recovery/root/recovery.fstab
 #TARGET_PROVIDES_RECOVERY_INIT_RC := true
@@ -387,10 +387,10 @@ TW_NO_USB_STORAGE := true
 BOARD_HAS_NO_REAL_SDCARD := true
 # This excludes parted from the build... parted is prebuilt and for arm CPU only
 
-#TW_USE_TOOLBOX := true
-#TW_EXCLUDE_MTP := true
-#TW_EXCLUDE_SUPERSU := true
-#TW_HAS_DOWNLOAD_MODE := true
+TW_USE_TOOLBOX := true
+TW_EXCLUDE_MTP := true
+TW_EXCLUDE_SUPERSU := true
+TW_HAS_DOWNLOAD_MODE := true
 #(TW_DISABLE_DOUBLE_BUFFERING), true)
 TW_NEVER_UNMOUNT_SYSTEM := true
 #TW_FORCE_CPUINFO_FOR_DEVICE_ID), true
@@ -401,6 +401,9 @@ TW_NO_EXFAT : = true
 
 TW_DISABLE_TTF := true
 ## This excludes file 324.0KiB [######    ]  libft2.so
+
+#for 5.1
+TW_NEW_ION_HEAP := true
 
 #####
 # Make sure this folder exists so display stuff doesn't fail
