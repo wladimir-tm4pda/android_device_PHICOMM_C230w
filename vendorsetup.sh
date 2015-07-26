@@ -1,3 +1,3 @@
 for i in eng userdebug user; do
-	add_lunch_combo cm_C230w-${i}
+	add_lunch_combo omni_C230w-${i}
 done
