@@ -397,7 +397,7 @@ TW_NEVER_UNMOUNT_SYSTEM := true
 TW_USE_MODEL_HARDWARE_ID_FOR_DEVICE_ID := true
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true
 TW_NO_EXFAT : = true
-#TW_SCREEN_BLANK_ON_BOOT := true
+TW_SCREEN_BLANK_ON_BOOT := true
 
 TW_DISABLE_TTF := true
 ## This excludes file 324.0KiB [######    ]  libft2.so
