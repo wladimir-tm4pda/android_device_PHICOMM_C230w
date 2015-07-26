@@ -7,4 +7,8 @@ but that is 'too big' size of resulting "recovery.img" (11743232) -- via the siz
 # if you flash this recovery - it will brick your device!!
 <br> maybe in future will try to compile 'smaller kernel' and use FLAG "TARGET_PREBUILT_RECOVERY_KERNEL := " for 
 <br> details:
+<<<<<<< HEAD
 <br>http://forum.xda-developers.com/showpost.php?p=62044653&postcount=394
+=======
+<br>http://forum.xda-developers.com/showpost.php?p=62044653&postcount=394
+>>>>>>> 22f3f7a6a3a8c6dd63a151cabc8fcdd54a5242a3
