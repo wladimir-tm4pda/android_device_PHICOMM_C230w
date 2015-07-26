@@ -16,3 +16,14 @@ PRODUCT_NAME := cm_C230w
 PRODUCT_BRAND := PHICOMM
 PRODUCT_MODEL := C230w
 PRODUCT_MANUFACTURER := PHICOMM
+
+# for compatribility with stock ROMs asserts:
+# assert(getprop("ro.product.device") == "msm8610" ||
+#       getprop("ro.build.product") == "msm8610");
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BUILD_PRODUCT=msm8610
+#    PRODUCT_DEVICE=msm8610
+
+#PRODUCT_PROPERTY_OVERRIDES :=  ro.build.product=msm8610
+#    ro.product.device=msm8610
